@@ -48,7 +48,12 @@ table {
 }
 /* 以上為Reset */
 
+*,*:before,*:after{
+box-sizing: border-box
+} 
+
 .wrap{
+	background: #FBFBFB;
     max-width: 1920px;
 	margin: 0 auto;
 	flex-wrap: wrap;
@@ -79,12 +84,11 @@ table {
 }
 
 .menu li a:hover{
-  	color: gray;
+  	color: #4B4B4B;
 }
 
 .banner1 ul{
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -196,8 +200,8 @@ table {
 }
 .search-icon{
     width: 24px;
-    padding-left: 16px;
     position: absolute;
+	left: 16px;
 }
 
 .searchbar:focus {
@@ -218,6 +222,64 @@ table {
 	padding: 40px 0;
 	gap: 24px;
 }
+
+.page{
+	background: white;
+	width: 328px;
+	border-radius: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 8px 20px;
+}
+
+.page li{
+	width: 40px;
+}
+
+.page a , .page span {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+	color: #000;
+}
+
+.page a:hover{
+	color: #0027D5;
+}
+
+.footer{
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+.footer-top{
+	display: flex;
+	align-items: center;
+	justify-content:space-between ;
+	padding: 80px 0;
+}
+
+.email a{
+	font-size: 32px;
+	color: #000;
+	text-decoration: none;
+}
+
+.email a:hover{
+	color: #4B4B4B;
+}
+
+.contact{
+	display: flex;
+}
+
+.footer-bottom{
+	padding: 24px 0;
+	text-align: center;
+}
+
 @media (max-width:1024px) {
 	img{
 		width: 100%;
