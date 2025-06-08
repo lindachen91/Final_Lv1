@@ -95,6 +95,9 @@ box-sizing: border-box
 
 img{
 	width: 100%;
+	max-width: 100%;
+  	height: auto;
+  	display: block;
 }
 
 .b1-right, .b1-left, .b2-left, .b2-right{
@@ -288,11 +291,4 @@ img{
 .footer-bottom{
 	padding: 24px 0;
 	text-align: center;
-}
-
-@media (max-width:767px) 
-{
-	img{
-		width: 100%;
-	}
 }
