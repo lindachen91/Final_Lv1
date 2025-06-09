@@ -109,11 +109,13 @@ img{
 }
 
 .b1-text{
+	width: 50%;
 	position: absolute;
 	color: #0027D5;
 	line-height: 1.5;
 	left: 10%;
 	top: 33%;
+	word-break: break-all;
 }
 
 .b1-text h1{
@@ -291,4 +293,11 @@ img{
 .footer-bottom{
 	padding: 24px 0;
 	text-align: center;
+}
+
+
+@media (max-width:767px) {
+.wrap {
+	width: 100%
+	}
 }
